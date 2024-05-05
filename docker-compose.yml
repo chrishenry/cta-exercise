@@ -1,0 +1,24 @@
+---
+name: cta-exercise
+services:
+  backend:
+    build:
+      dockerfile: Dockerfile
+      context: ./backend/
+    environment:
+      - COMMIT_INFO_GIT_SHA=${GIT_SHA:-}
+    ports:
+      - "81:80"
+    volumes:
+      - ./backend/:/app
+
+  frontend:
+    build:
+      dockerfile: Dockerfile
+      context: ./frontend/
+    ports:
+      - "80:5173"
+      - "5173:5173"
+    volumes:
+      - ./frontend/:/app
+
