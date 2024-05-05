@@ -44,3 +44,19 @@ This project uses standard ports for convience, but this also increases the like
 If you need to get back to your shell, just `Ctrl + C`, the containers will continue to run.
 
 Run `docker-compose ps` to list running containers.
+
+# Project overview
+
+This project takes on both the frontend and backend portions of the Engineering-Coding Walkthrough task. There was significant overlap with research on new React component libraries for my current role, and this project served as an excellent test bed.
+
+All told, this project took me around 5 hours. There was some extra time spent on research and some false starts with React component libs that didn't meet my needs.
+
+## Backend notes
+
+Last week, I sent an email to Meghan with a few questions on the task. The obvious blocker was the lack of related JSON document referenced in the task. Her response indicated I should move forward in any way I saw fit. So I generated a file based on the provided structure.
+
+To keep within time constraints, the calculations for determining primary winners were simplified down to a national plurality, which clearly isn't correct. However, the winners.py could be updated with per-state rules (plurality, majority, top-two, and Louisana's top-two+runoff). Additionally, after determining the year this calculation is made, delegate count data would need to be sourced to inform each party's overall winner. However, as a believer in end-to-end MVPs, this should suffice for our purposes.
+
+## Frontend notes
+
+The brief implied a form "submission" on field change. However, I felt this was a bit awkward, as onChange doesn't fire if the desired field is also the initial value. So I added a submit button. This also allowed for a few more niceties, like a button that grabs the current user's IP. I found this quite helpful, as IPs aren't the kind of thing I keep memorized or laying about. ;)
