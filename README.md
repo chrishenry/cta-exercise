@@ -15,7 +15,7 @@ Once installed, click on the gear icon to navigate to Preferences.
 
 NB: the above probably isn't strictly neccessary for this project, but this is some boilerplate I've developed that's been useful for larger projects.
 
-NB2: This project was built on a 2022 Macbook Pro with an M2 chip. Due to time restrictions, I did not build multi-platform images. So folx on other platforms may experience issues.
+NB2: This project was built on a 2022 Macbook Pro with an M2 chip. Due to time restrictions, I did not build multi-platform images. So folx on other platforms may experience issues. Should you experience errors related to platform, rm the package-lock.json, comment, the COPY command in frontend/Dockerfile, and try again.
 
 ## Use docker-compose to run services.
 
