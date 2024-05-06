@@ -19,6 +19,7 @@ export function Home() {
           <li>The geolocation fields could be expanded to the <a href="https://ip-api.com/docs/api:json">full set provided</a></li>
           <li>It'd be nice to pick multiple fields and see all of them. ie normal use cases would be: Find Lat/Long. Find City/State/Country</li>
           <li>The brief implied results should appear onChange of the field picker. However, I found this awkward, since onChange doesn't fire if the desired field is initially selected. Instead, I opted for a submit button.</li>
+          <li>The Primary page has a bug where the dropdown does not persist it's selection. This is because there's no value passed to the NativeSelect.</li>
         </ul>
       </p>
     </>
