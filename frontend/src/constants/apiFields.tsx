@@ -1,0 +1,15 @@
+export default {
+  status: "Request Status",
+  country: "Country",
+  countryCode: "Two Letter Country Code",
+  region: "Two Letter Region Code",
+  regionName: "Region",
+  city: "City",
+  zip: "Postal Code",
+  lat: "Lattitude",
+  lon: "Longitude",
+  timezone: "Timezone",
+  isp: "Internet Service Provider",
+  org: "Spectrum",
+  as: "AS12271 Charter Communications Inc",
+}
